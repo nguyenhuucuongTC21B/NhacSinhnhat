@@ -65,8 +65,32 @@ func (s *Store) EnsureTemplate() (bool, error) {
 		}
 	}
 	sample := []Person{
-		{Name: "Nguyễn Văn An", Day: 1, Month: 1, Kind: Solar, WarnDays: 3, Note: "Bản mẫu – sửa hoặc xóa"},
-		{Name: "Trần Thị Bình", Day: 15, Month: 8, Kind: Lunar, WarnDays: 3, Note: "Sinh nhật âm lịch"},
+		{Name: "Huy Tiến", Day: 9, Month: 9, Kind: Solar, WarnDays: 3, Note: "Viện trưởng VKSTC"},
+	{Name: "Nguyễn Đức Thái", Day: 14, Month: 11, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKSTC"},
+	{Name: "Quang Dũng", Day: 1, Month: 1, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKSTC"},
+	{Name: "Hồ Đức Anh", Day: 14, Month: 11, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKSTC"},
+	{Name: "Nguyễn Duy Giảng", Day: 25, Month: 7, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKSTC"},
+	{Name: "Trần Hải Quân", Day: 1, Month: 8, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKSTC"},
+	{Name: "Nguyễn Văn Quảng", Day: 23, Month: 8, Kind: Solar, WarnDays: 3, Note: "(Chánh án Tòa Tối cao)"},
+	{Name: "Lê Tiến", Day: 28, Month: 2, Kind: Solar, WarnDays: 3, Note: "(Phó Chánh án Tòa Tối cao)"},
+	{Name: "Lê Ngọc Quang", Day: 21, Month: 1, Kind: Solar, WarnDays: 3, Note: "Bí thư Thành ủy"},
+	{Name: "Nguyễn Đình Vĩnh", Day: 11, Month: 8, Kind: Solar, WarnDays: 3, Note: "Phó BT Ttr Thành ủy - Chủ tịch"},
+	{Name: "Nguyễn Khắc Toàn", Day: 19, Month: 4, Kind: Solar, WarnDays: 3, Note: "Bí thư Đảng ủy Các cơ quan"},
+	{Name: "Ngô Xuân Thắng", Day: 30, Month: 4, Kind: Solar, WarnDays: 3, Note: "Phó Bí thư Thành ủy, Chủ tịch"},
+	{Name: "Nguyễn Mạnh Hùng", Day: 21, Month: 10, Kind: Solar, WarnDays: 3, Note: "(PBT - Chủ tịch UBND)"},
+	{Name: "Đức Dũng", Day: 1, Month: 7, Kind: Solar, WarnDays: 3, Note: "Phó Chủ tịch HĐND"},
+	{Name: "Hồ Kỳ Minh", Day: 1, Month: 5, Kind: Solar, WarnDays: 3, Note: "Phó Chủ tịch UBND"},
+	{Name: "Nguyễn Công Thanh", Day: 4, Month: 10, Kind: Solar, WarnDays: 3, Note: "Phó Chủ tịch HĐND"},
+	{Name: "Nguyễn Thị Anh Thi", Day: 31, Month: 10, Kind: Solar, WarnDays: 3, Note: "Phó Chủ tịch UBND"},
+	{Name: "Trần Nam Hưng", Day: 14, Month: 11, Kind: Solar, WarnDays: 3, Note: "Phó Chủ tịch UBND"},
+	{Name: "Phan Thái Bình", Day: 12, Month: 8, Kind: Solar, WarnDays: 3, Note: "Phó Chủ tịch UBND"},
+	{Name: "Trần Hoài Nam", Day: 30, Month: 10, Kind: Solar, WarnDays: 3, Note: "Viện trưởng VKS Tp"},
+	{Name: "Nguyễn Văn Chiến", Day: 3, Month: 6, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKS Tp"},
+	{Name: "Ngô Thọ Nam", Day: 20, Month: 11, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKS Tp"},
+	{Name: "Nguyễn Phước Toán", Day: 23, Month: 11, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKS Tp"},
+	{Name: "Nguyễn Ngọc Tình", Day: 14, Month: 4, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKS Tp"},
+	{Name: "Nguyễn Thị Kim Hồng", Day: 27, Month: 11, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKS Tp"},
+	{Name: "Nguyễn Hữu Khoa", Day: 24, Month: 11, Kind: Solar, WarnDays: 3, Note: "Phó Viện trưởng VKS Tp"},
 	}
 	for r, p := range sample {
 		if err := writePersonRow(f, r+2, p); err != nil {
